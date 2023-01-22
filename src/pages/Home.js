@@ -12,15 +12,19 @@ const Home = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   //setting and getting the data
+
   useEffect(() => {
-    const savedNotes = JSON.parse(localStorage.getItem("app-data"));
+    const savedNotes = JSON.parse(localStorage.getItem("data"));
+
     if (savedNotes) {
       setNotes(savedNotes);
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("app-data", JSON.stringify(notes));
+    if (notes.length) {
+      localStorage.setItem("data", JSON.stringify(notes));
+    }
   }, [notes]);
 
   // add note function

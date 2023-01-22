@@ -20,6 +20,8 @@ const AddNote = ({ handleAddNote }) => {
       handleAddNote(noteText);
       // the code below to reset note text section
       setNoteText("");
+    }else{
+      window.alert("cannot add empty!");
     }
   };
 
