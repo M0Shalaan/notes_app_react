@@ -1,15 +1,15 @@
 import React from "react";
-
+import AddNote from "../components/AddNote"
 // constants for app
 const Home = () => {
 
 
 
 
-    
+
   return (
     <div>
-      <h1>test</h1>
+      <AddNote/>
     </div>
   );
 };
