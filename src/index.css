@@ -2,8 +2,9 @@
 
 body {
   margin: 0;
+  color: #000;
   /* background-image: url('../src/Components/img/day\ sky.jpg'); */
-  background-color: #000;
+  background-color: rgb(112, 106, 106);
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Montserrat', sans-serif;
