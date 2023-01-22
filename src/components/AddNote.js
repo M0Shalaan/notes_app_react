@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { LinearProgress } from "@mui/material";
+import { LinearProgress } from '@mui/material';
 
 const AddNote = ({ handleAddNote }) => {
   // constants section
@@ -8,9 +8,9 @@ const AddNote = ({ handleAddNote }) => {
   const noteCharLeft = noteCharLimit - noteText.length;
 
   //   handle limit of note text
-  const handleChange = (event) => {
-    if (noteCharLimit - event.target.value.length >= 0) {
-      setNoteText(event.target.value);
+  const handleChange = (e) => {
+    if (noteCharLimit - e.target.value.length >= 0) {
+      setNoteText(e.target.value);
     }
   };
 
