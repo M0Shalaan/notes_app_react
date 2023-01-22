@@ -1,9 +1,17 @@
 import React from "react";
-import { useState } from "react";
 
 // constants for app
 const Home = () => {
 
+
+
+
+    
+  return (
+    <div>
+      <h1>test</h1>
+    </div>
+  );
 };
 
 export default Home;
