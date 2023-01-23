@@ -22,10 +22,11 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    if (notes.length) {
+    if(notes.length){
       localStorage.setItem("data", JSON.stringify(notes));
     }
-  }, [notes]);
+    },[notes])
+ 
 
   // add note function
   const addNote = (text) => {
